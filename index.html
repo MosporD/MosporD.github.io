@@ -9,17 +9,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600;700;900&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg:#050810;--bg2:#080c14;--bg3:#0c1220;--bg4:#101828;
-  --cyan:#00d4ff;--cyan2:#00aacc;--green:#00ff88;--green2:#00cc6a;
-  --amber:#ffb300;--red:#ff4444;--text:#c8d8e8;--muted:#4a6080;--muted2:#6a8aaa;
-  --border:rgba(0,212,255,0.1);--border2:rgba(0,212,255,0.25);--border3:rgba(0,212,255,0.5);
+  --bg:#f8fafc;--bg2:#ffffff;--bg3:#eef4f8;--bg4:#e2e8f0;
+  --cyan:#0077aa;--cyan2:#005f87;--green:#15803d;--green2:#166534;
+  --amber:#a16207;--red:#b91c1c;--text:#111827;--muted:#64748b;--muted2:#334155;
+  --border:rgba(0,119,170,0.15);--border2:rgba(0,119,170,0.32);--border3:rgba(0,119,170,0.6);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--text);font-family:'Barlow',sans-serif;overflow-x:hidden;font-size:15px;}
 #bg-canvas{position:fixed;inset:0;z-index:0;pointer-events:none;}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(5,8,16,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border2);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,0.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border2);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;}
 .nav-logo{font-family:'Share Tech Mono',monospace;font-size:12px;color:var(--cyan);display:flex;align-items:center;gap:10px;}
 .nav-logo-icon{width:28px;height:28px;border:1px solid var(--border3);border-radius:3px;display:flex;align-items:center;justify-content:center;}
 .nav-logo-icon::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--cyan);animation:pdot 2s ease-in-out infinite;}
@@ -38,7 +38,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(5,8,16,0.92)
 .hero-meta{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--cyan);letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.5rem;display:flex;align-items:center;gap:1rem;}
 .hmline{width:40px;height:1px;background:var(--cyan);}
 .hmdot{width:6px;height:6px;border-radius:50%;border:1px solid var(--cyan);flex-shrink:0;}
-h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(3.5rem,10vw,8rem);font-weight:900;line-height:.9;letter-spacing:-.01em;text-transform:uppercase;color:#fff;margin-bottom:.4rem;}
+h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.15rem,8vw,7.5rem);font-weight:900;line-height:.9;letter-spacing:-.01em;text-transform:uppercase;color:#111827;margin-bottom:.4rem;white-space:nowrap;}
 h1 .outline{color:transparent;-webkit-text-stroke:1.5px rgba(0,212,255,0.5);}
 h1 .acc{color:var(--cyan);}
 .htline{height:3px;width:180px;background:var(--cyan);margin:1.2rem 0 1.5rem;position:relative;}
@@ -86,7 +86,7 @@ h1 .acc{color:var(--cyan);}
 .ebox:hover{border-color:var(--border2);}
 .ebox.cr{border-color:rgba(0,212,255,.2);}
 .etop{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.8rem;}
-.etitle{font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#fff;}
+.etitle{font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#111827;}
 .eorg{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--cyan);margin-top:3px;}
 .edate{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--muted2);padding:3px 10px;border:1px solid var(--border);border-radius:2px;white-space:nowrap;}
 .edate.live{color:var(--green);border-color:rgba(0,255,136,.3);background:rgba(0,255,136,.06);}
@@ -125,7 +125,7 @@ h1 .acc{color:var(--cyan);}
 .egrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;}
 .ecard{background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:1.25rem;transition:border-color .2s;}
 .ecard:hover{border-color:var(--border2);}
-.edegree{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:4px;}
+.edegree{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;color:#111827;margin-bottom:4px;}
 .eschool{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--cyan);margin-bottom:.75rem;}
 .emeta{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--muted);display:flex;gap:1rem;}
 .egpa{color:var(--green);}
@@ -195,7 +195,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);padding:1.
     <div class="hmline"></div>
     <div class="hmdot"></div>
   </div>
-  <h1>MALEK<br><span class="outline">MOHAM</span><span class="acc">MAD</span></h1>
+  <h1>MALEK <span class="outline">MOHAM</span><span class="acc">MAD</span></h1>
   <div class="htline"></div>
   <div class="hero-role">GSM · WCDMA · <span>LTE</span> · <span>5G NR</span> &nbsp;|&nbsp; Nokia · Huawei &nbsp;|&nbsp; Amman, Jordan</div>
   <p class="hero-summary">Results-driven telecommunications engineer with 3+ years optimizing multi-technology RAN across 2G–5G at Zain Jordan. Combines radio expertise with software engineering to deliver data-driven performance improvements and reduce manual operations work.</p>
